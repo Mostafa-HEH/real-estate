@@ -1,0 +1,11 @@
+.wrapper {
+  max-width: $lg;
+
+  @media screen and (max-width: 1300px) {
+    padding: 32px;
+  }
+
+  @media screen and (max-width: $sm) {
+    padding: 16px;
+  }
+}
