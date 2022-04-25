@@ -1,0 +1,8 @@
+// ------------------------------------
+// - Sections height width background  -
+// ------------------------------------
+@mixin section-rs($min-height: 100%, $bg-color: $white, $width: 100%) {
+  background-color: $bg-color;
+  min-height: $min-height;
+  width: $width;
+}
