@@ -1,3 +1,132 @@
 .how-it-works {
   @include section-rs(702px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.how-it-works .wrapper {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: $md) {
+    justify-content: center;
+  }
+}
+
+.how-it-works .content {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+  gap: 32px;
+
+  @media screen and (max-width: $md) {
+    align-items: center;
+  }
+
+  & .head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+
+    @media screen and (max-width: $md) {
+      align-items: center;
+      text-align: center;
+    }
+
+    &__subtitle {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 21px;
+      color: #c4c4c4;
+    }
+
+    &__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 48px;
+      color: #333333;
+      max-width: 355px;
+    }
+  }
+
+  & .image {
+    display: none;
+
+    @media screen and (max-width: $md) {
+      display: block;
+      height: 254px;
+      width: 90%;
+    }
+  }
+
+  & .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    & .step {
+      display: flex;
+      flex-direction: column;
+      box-shadow: 10px 32px 72px rgba(0, 0, 0, 0.03);
+      border-radius: 10px;
+      padding: 16px;
+
+      &__title {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 31px;
+        color: #333333;
+      }
+
+      &__decription {
+        font-style: normal;
+        font-weight: 400;
+        font-size: px-to-rem(14);
+        line-height: 24px;
+        color: #999999;
+      }
+    }
+  }
+}
+
+.how-it-works .image {
+  position: relative;
+  background: #c4c4c4;
+  border-radius: 10px;
+  width: 632px;
+  height: 548px;
+
+  @media screen and (max-width: $md) {
+    display: none;
+  }
+
+  & img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  & .patern:first-child {
+    position: absolute;
+    top: -28px;
+    left: -28px;
+  }
+
+  & .patern:last-child {
+    position: absolute;
+    bottom: -28px;
+    right: -28px;
+  }
 }
