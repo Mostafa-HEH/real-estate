@@ -3,6 +3,9 @@
   padding: 9.5px 29.078px;
   text-decoration: none;
   text-transform: capitalize;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
   @media screen and (max-width: $md) {
     padding: 18.8045px 29.078px;

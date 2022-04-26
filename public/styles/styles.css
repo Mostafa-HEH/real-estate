@@ -906,6 +906,180 @@ p {
   background-color: #ffffff;
   min-height: 1210px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .featured-property {
+    min-height: auto;
+  }
+}
+
+.featured-property .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.featured-property .head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+}
+.featured-property .head__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 21px;
+  color: #c4c4c4;
+}
+.featured-property .head__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 48px;
+  color: #333333;
+  max-width: 355px;
+}
+
+.featured-property .page {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.featured-property .page--active {
+  display: flex;
+}
+
+.featured-property .page .service {
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  box-shadow: 10px 32px 72px rgba(51, 51, 51, 0.03);
+  border-radius: 10px;
+  padding: 24px;
+  gap: 24px;
+}
+@media screen and (max-width: 600px) {
+  .featured-property .page .service {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+  .featured-property .page .service:first-child {
+    display: flex;
+  }
+}
+.featured-property .page .service__image {
+  width: 256px;
+  height: 262px;
+  background: #c4c4c4;
+  border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+  .featured-property .page .service__image {
+    width: 100%;
+  }
+}
+.featured-property .page .service__image img {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.featured-property .page .service__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .featured-property .page .service__details {
+    gap: 24px;
+  }
+}
+.featured-property .page .service__details .tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.featured-property .page .service__details .tags .tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 105px;
+  height: 32px;
+  border-radius: 32px;
+}
+.featured-property .page .service__details .tags .tag__icon {
+  width: 16px;
+}
+.featured-property .page .service__details .tags .tag__name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #c4c4c4;
+}
+.featured-property .page .service__details .tags .tag:first-child {
+  background: #fff5e8;
+}
+.featured-property .page .service__details .tags .tag:last-child {
+  background: #f4f7ff;
+}
+.featured-property .page .service__details .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 32px;
+  color: #333333;
+  max-width: 246px;
+}
+.featured-property .page .service__details .price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 21px;
+  color: #c4c4c4;
+}
+.featured-property .page .service__details .numbers {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 18px;
+  color: #999999;
+}
+.featured-property .page .service__details .numbers span {
+  padding: 0 4px;
+}
+.featured-property .page .service__details .numbers span:nth-of-type(2) {
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
+}
+
+.dotts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.dotts__dot {
+  width: 12px;
+  height: 12px;
+  background: #f2f2f2;
+  display: block;
+  border-radius: 50%;
+}
+.dotts__dot--active {
+  background: #c4c4c4;
 }
 
 .our-blog {
@@ -941,6 +1115,9 @@ p {
   padding: 9.5px 29.078px;
   text-decoration: none;
   text-transform: capitalize;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 @media screen and (max-width: 900px) {
   .btn {
