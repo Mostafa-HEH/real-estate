@@ -1,0 +1,9 @@
+.btn {
+  border-radius: 10px;
+  padding: 9.5px 29.078px;
+
+  &.primary {
+    background-color: $primary;
+    color: $white !important;
+  }
+}

@@ -1,3 +1,102 @@
 .navigation {
   @include section-rs(88px);
 }
+
+.navigation .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: unset;
+  text-decoration: unset;
+  gap: 6px;
+
+  &__icon {
+    width: 24px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 21px;
+    color: #c4c4c4;
+  }
+}
+
+.navigation .links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  gap: 42px;
+
+  @media screen and (max-width: $md) {
+    display: none;
+  }
+
+  &__link {
+    & a {
+      color: #999999;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 21px;
+      text-decoration: none;
+    }
+
+    &--active,
+    &:hover {
+      & a {
+        color: #c4c4c4;
+      }
+    }
+  }
+}
+
+.navigation .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 42px;
+
+  @media screen and (max-width: $md) {
+    display: none;
+  }
+
+  & a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #999999;
+    text-decoration: none;
+  }
+}
+
+.navigation .menu-icon {
+  display: none;
+  height: 24px;
+  width: 24px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+
+  @media screen and (max-width: $md) {
+    display: flex;
+  }
+
+  & span {
+    display: block;
+    height: 2px;
+    background-color: #333333;
+    width: 16px;
+  }
+}
