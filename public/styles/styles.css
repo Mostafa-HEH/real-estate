@@ -347,6 +347,10 @@ p {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .navigation {
   background-color: #ffffff;
   min-height: 88px;
@@ -686,6 +690,97 @@ p {
   background-color: #ffffff;
   min-height: 382px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-choose-us .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+}
+
+.why-choose-us .head {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  text-align: center;
+}
+.why-choose-us .head__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 21px;
+  color: #c4c4c4;
+}
+.why-choose-us .head__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 56px;
+  color: #333333;
+}
+
+.why-choose-us .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 32px;
+}
+@media screen and (max-width: 600px) {
+  .why-choose-us .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.why-choose-us .content .group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 16px;
+  width: 384px;
+  height: 194px;
+  background: #ffffff;
+  box-shadow: 10px 32px 72px rgba(51, 51, 51, 0.03);
+  border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+  .why-choose-us .content .group {
+    width: 100%;
+  }
+}
+.why-choose-us .content .group__icon {
+  background-color: #f1feff;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.why-choose-us .content .group__icon img {
+  width: 24px;
+}
+.why-choose-us .content .group__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
+}
+.why-choose-us .content .group__info {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #999999;
 }
 
 .how-it-works {
@@ -751,6 +846,16 @@ p {
 
 body {
   font-family: "DM Sans", sans-serif;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
 }
 
 /*# sourceMappingURL=styles.css.map */
