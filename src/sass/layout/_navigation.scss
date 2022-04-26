@@ -1,5 +1,9 @@
 .navigation {
   @include section-rs(88px);
+  display: flex;
+  align-items: center;
+  position: static;
+  top: 0;
 }
 
 .navigation .wrapper {

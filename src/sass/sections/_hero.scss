@@ -1,3 +1,219 @@
 .hero {
   @include section-rs(790px);
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 830px) {
+    min-height: 980px;
+    position: relative;
+  }
+
+  @media screen and (max-width: 378px) {
+    min-height: 1092px;
+  }
+}
+
+.hero .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 81px;
+
+  @media screen and (max-width: 830px) {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 0;
+  }
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 370px;
+  gap: 32px;
+
+  @media screen and (max-width: 830px) {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__sub-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 21px;
+    color: #c4c4c4;
+  }
+
+  &__main-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: px-to-rem(40);
+    line-height: 56px;
+    color: #333333;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: px-to-rem(24);
+    color: #999999;
+  }
+
+  &__button-group {
+    flex-direction: row;
+    display: flex;
+    gap: 16px;
+
+    @media screen and (max-width: 830px) {
+      position: absolute;
+      bottom: 0;
+      flex-direction: column;
+    }
+  }
+}
+
+.hero .chapes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  @media screen and (max-width: $md) {
+    position: relative;
+    justify-content: center;
+  }
+
+  & .chape {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 64px;
+
+    & .image {
+      background-color: #c4c4c4;
+      width: 360px;
+      height: 496px;
+      border-radius: 320px 320px 0px 0px;
+
+      @media screen and (max-width: 1250px) {
+        width: 281px;
+        height: 430px;
+      }
+
+      @media screen and (max-width: 1090px) {
+        width: 234px;
+        height: 362px;
+      }
+
+      @media screen and (max-width: 990px) {
+        width: 186px;
+        height: 288px;
+      }
+
+      @media screen and (max-width: $md) {
+        width: 360px;
+        height: 496px;
+      }
+
+      @media screen and (max-width: 424px) {
+        width: 300px;
+      }
+
+      @media screen and (max-width: 378px) {
+        width: 250px;
+      }
+
+      & img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 320px 320px 0px 0px;
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    & .patern {
+      display: grid;
+      grid-template-rows: repeat(4, 8px);
+      grid-template-columns: repeat(5, 8px);
+      gap: 13.3438px;
+
+      &__dot {
+        background-color: #f2f2f2;
+        border-radius: 50%;
+      }
+    }
+  }
+  &__left {
+    align-items: flex-start;
+
+    & .image {
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        box-sizing: border-box;
+        bottom: 0;
+        left: -16px;
+        height: 100%;
+        width: 100%;
+        border-left: 1px solid #c4c4c4;
+        border-bottom: 1px solid #c4c4c4;
+        border-top: 1px solid #c4c4c4;
+        border-radius: 320px 320px 0px 0px;
+      }
+    }
+
+    & .patern {
+      @media screen and (max-width: $md) {
+        position: absolute;
+        bottom: -7%;
+        left: 0;
+        z-index: 0;
+      }
+    }
+  }
+
+  &__right {
+    align-items: flex-end;
+    @media screen and (max-width: $md) {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    & .image {
+      position: relative;
+
+      @media screen and (max-width: $md) {
+        display: none;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        box-sizing: border-box;
+        bottom: 0;
+        right: -16px;
+        height: 100%;
+        width: 100%;
+        border-right: 1px solid #c4c4c4;
+        border-bottom: 1px solid #c4c4c4;
+        border-top: 1px solid #c4c4c4;
+        border-radius: 320px 320px 0px 0px;
+      }
+    }
+  }
 }

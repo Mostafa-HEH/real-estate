@@ -1,0 +1,4 @@
+// Change px to rem
+@function px-to-rem($px) {
+  @return $px * 0.0625rem;
+}

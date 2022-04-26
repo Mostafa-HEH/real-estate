@@ -1,9 +1,21 @@
 .btn {
   border-radius: 10px;
   padding: 9.5px 29.078px;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  @media screen and (max-width: $md) {
+    padding: 18.8045px 29.078px;
+  }
 
   &.primary {
     background-color: $primary;
     color: $white !important;
+  }
+
+  &.secondary {
+    color: #c4c4c4;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
   }
 }
