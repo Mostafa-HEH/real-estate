@@ -1,5 +1,6 @@
 .wrapper {
   max-width: $lg;
+  margin: auto;
 
   @media screen and (max-width: 1300px) {
     padding: 32px;
