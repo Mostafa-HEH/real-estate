@@ -4,6 +4,13 @@
   align-items: center;
   position: static;
   top: 0;
+  background-color: $white;
+  z-index: 1994;
+  box-shadow: 10px 32px 72px rgba(51, 51, 51, 0.03);
+
+  &--scroll {
+    position: fixed;
+  }
 }
 
 .navigation .wrapper {

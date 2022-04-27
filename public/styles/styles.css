@@ -359,6 +359,12 @@ p {
   align-items: center;
   position: static;
   top: 0;
+  background-color: #ffffff;
+  z-index: 1994;
+  box-shadow: 10px 32px 72px rgba(51, 51, 51, 0.03);
+}
+.navigation--scroll {
+  position: fixed;
 }
 
 .navigation .wrapper {
@@ -1645,16 +1651,16 @@ p {
 
 body {
   font-family: "DM Sans", sans-serif;
-  background-color: red;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 42px;
+  gap: 64px;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  gap: 42px;
+  gap: 64px;
 }
 
 /*# sourceMappingURL=styles.css.map */
