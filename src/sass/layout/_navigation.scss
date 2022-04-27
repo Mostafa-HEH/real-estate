@@ -13,27 +13,6 @@
   justify-content: space-between;
 }
 
-.navigation .logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: unset;
-  text-decoration: unset;
-  gap: 6px;
-
-  &__icon {
-    width: 24px;
-  }
-
-  &__text {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 21px;
-    color: #c4c4c4;
-  }
-}
-
 .navigation .links {
   display: flex;
   flex-direction: row;
