@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: repeat(4, 8px);
   grid-template-columns: repeat(5, 8px);
-  gap: 13.3438px;
+  gap: 8px;
 
   &__dot {
     background-color: #f2f2f2;
