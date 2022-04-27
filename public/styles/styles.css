@@ -368,25 +368,6 @@ p {
   justify-content: space-between;
 }
 
-.navigation .logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: unset;
-  text-decoration: unset;
-  gap: 6px;
-}
-.navigation .logo__icon {
-  width: 24px;
-}
-.navigation .logo__text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 21px;
-  color: #c4c4c4;
-}
-
 .navigation .links {
   display: flex;
   flex-direction: row;
@@ -458,10 +439,90 @@ p {
   width: 100%;
 }
 
+.footer .wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 24px;
+}
+.footer .wrapper .group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media screen and (max-width: 600px) {
+  .footer .wrapper .group.about {
+    grid-column: 1/5;
+  }
+}
+.footer .wrapper .group.about p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 24px;
+  color: #999999;
+  max-width: 360px;
+}
+.footer .wrapper .group.about .connect {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.footer .wrapper .group.about .connect:last-child {
+  margin-top: -12px;
+}
+.footer .wrapper .group.about .connect .img {
+  width: 24px;
+}
+.footer .wrapper .group.about .connect a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 18px;
+  color: #999999;
+}
+@media screen and (max-width: 600px) {
+  .footer .wrapper .group.social {
+    grid-column: 3/5;
+  }
+}
+.footer .wrapper .group__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 21px;
+  color: #333333;
+}
+.footer .wrapper .group__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 18px;
+  color: #999999;
+  text-decoration: none;
+}
+
 .copyright {
   background-color: #ffffff;
   min-height: 66px;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.copyright .wrapper {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 18px;
+  color: #999999;
+}
+.copyright .wrapper a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .hero {
@@ -1561,6 +1622,25 @@ p {
 .patern__dot {
   background-color: #f2f2f2;
   border-radius: 50%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: unset;
+  text-decoration: unset;
+  gap: 6px;
+}
+.logo__icon {
+  width: 24px;
+}
+.logo__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 21px;
+  color: #c4c4c4;
 }
 
 body {
