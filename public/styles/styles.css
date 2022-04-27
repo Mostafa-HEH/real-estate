@@ -1086,6 +1086,273 @@ p {
   background-color: #ffffff;
   min-height: 796px;
   width: 100%;
+  display: flex;
+  align-content: center;
+}
+
+.our-blog .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  .our-blog .wrapper {
+    justify-content: center;
+  }
+}
+
+.our-blog .last-post {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (max-width: 1200px) {
+  .our-blog .last-post {
+    display: none;
+    margin: 42px 0;
+  }
+}
+.our-blog .last-post .image-contaier {
+  width: 632px;
+  height: 520px;
+  background: #c4c4c4;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 32px;
+}
+.our-blog .last-post .image-contaier img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.our-blog .last-post .image-contaier .author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 189px;
+  height: 74px;
+  background: #ffffff;
+  border-radius: 0px 0px 0px 10px;
+  padding: 16px;
+  gap: 16px;
+}
+.our-blog .last-post .image-contaier .author__image {
+  width: 40px;
+  height: 40px;
+  background: #c4c4c4;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.our-blog .last-post .image-contaier .author__image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.our-blog .last-post .image-contaier .author__name {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.our-blog .last-post .image-contaier .author__name .name {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 18px;
+  color: #333333;
+}
+.our-blog .last-post .image-contaier .author__name .title {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 16px;
+  color: #999999;
+}
+.our-blog .last-post .image-contaier .patern {
+  position: absolute;
+}
+.our-blog .last-post .image-contaier .patern.first {
+  top: -6%;
+  left: -6%;
+}
+.our-blog .last-post .image-contaier .patern.second {
+  bottom: -6%;
+  right: -6%;
+}
+.our-blog .last-post .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 40px;
+  color: #333333;
+  max-width: 666px;
+}
+.our-blog .last-post .post-review {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 24px;
+  color: #999999;
+  max-width: 576px;
+}
+.our-blog .last-post .post-review .read-more-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 24px;
+  color: #c4c4c4;
+  text-decoration: none;
+}
+.our-blog .last-post .post-review .read-more-btn:hover {
+  color: #999999;
+}
+
+.our-blog .posts-review {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (max-width: 900px) {
+  .our-blog .posts-review {
+    overflow: hidden;
+  }
+}
+.our-blog .posts-review .head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media screen and (max-width: 1200px) {
+  .our-blog .posts-review .head {
+    align-items: center;
+    text-align: center;
+  }
+}
+.our-blog .posts-review .head__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 21px;
+  color: #c4c4c4;
+}
+@media screen and (max-width: 600px) {
+  .our-blog .posts-review .head__subtitle {
+    font-size: 0.875rem;
+    line-height: 18px;
+  }
+}
+.our-blog .posts-review .head__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 48px;
+  color: #333333;
+  max-width: 388px;
+}
+@media screen and (max-width: 600px) {
+  .our-blog .posts-review .head__title {
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
+}
+.our-blog .posts-review .last-post {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .our-blog .posts-review .last-post {
+    display: flex;
+  }
+}
+@media screen and (max-width: 900px) {
+  .our-blog .posts-review .last-post .image-contaier {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .our-blog .posts-review .last-post .image-contaier {
+    height: 254px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .our-blog .posts-review .last-post {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .our-blog .posts-review .last-post .title {
+    font-size: 1rem;
+    line-height: 32px;
+  }
+}
+.our-blog .posts-review .posts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.our-blog .posts-review .posts__post {
+  display: flex;
+  flex-direction: row;
+  width: 472px;
+  min-height: 120px;
+  background: #ffffff;
+  box-shadow: 10px 32px 72px rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  padding: 16px;
+  gap: 16px;
+}
+@media screen and (max-width: 1200px) {
+  .our-blog .posts-review .posts__post {
+    width: 100%;
+  }
+}
+.our-blog .posts-review .posts__post .image {
+  max-width: 88px;
+  width: 100%;
+  height: 88px;
+  background: #c4c4c4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.our-blog .posts-review .posts__post .image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.our-blog .posts-review .posts__post .content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.our-blog .posts-review .posts__post .content__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #333333;
+}
+@media screen and (max-width: 600px) {
+  .our-blog .posts-review .posts__post .content__title {
+    font-size: 0.75rem;
+    line-height: 18px;
+  }
+}
+.our-blog .posts-review .posts__post .content__name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 24px;
+  color: #999999;
+}
+@media screen and (max-width: 600px) {
+  .our-blog .posts-review .posts__post .content__name {
+    font-size: 0.625rem;
+    line-height: 13px;
+  }
 }
 
 .testimonial {
@@ -1138,7 +1405,7 @@ p {
   display: grid;
   grid-template-rows: repeat(4, 8px);
   grid-template-columns: repeat(5, 8px);
-  gap: 13.3438px;
+  gap: 8px;
 }
 .patern__dot {
   background-color: #f2f2f2;
