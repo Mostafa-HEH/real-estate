@@ -395,7 +395,7 @@ p {
   text-decoration: none;
 }
 .navigation .links__link--active a, .navigation .links__link:hover a {
-  color: #c4c4c4;
+  color: #035397;
 }
 
 .navigation .user {
@@ -696,10 +696,14 @@ p {
   left: -16px;
   height: 100%;
   width: 100%;
-  border-left: 1px solid #c4c4c4;
-  border-bottom: 1px solid #c4c4c4;
-  border-top: 1px solid #c4c4c4;
+  border-left: 1px solid #fcd900;
+  border-bottom: 1px solid #fcd900;
+  border-top: 1px solid #fcd900;
   border-radius: 320px 320px 0px 0px;
+  transition: left 0.3s ease;
+}
+.hero .chapes__left .image:hover::after {
+  left: 0;
 }
 @media screen and (max-width: 900px) {
   .hero .chapes__left .patern {
@@ -737,10 +741,14 @@ p {
   right: -16px;
   height: 100%;
   width: 100%;
-  border-right: 1px solid #c4c4c4;
-  border-bottom: 1px solid #c4c4c4;
-  border-top: 1px solid #c4c4c4;
+  border-right: 1px solid #fcd900;
+  border-bottom: 1px solid #fcd900;
+  border-top: 1px solid #fcd900;
   border-radius: 320px 320px 0px 0px;
+  transition: right 0.3s ease;
+}
+.hero .chapes__right .image:hover::after {
+  right: 0;
 }
 
 .why-choose-us {
@@ -1047,6 +1055,7 @@ p {
   height: 262px;
   background: #c4c4c4;
   border-radius: 10px;
+  overflow: hidden;
 }
 @media screen and (max-width: 600px) {
   .featured-property .page .service__image {
@@ -1058,6 +1067,10 @@ p {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+.featured-property .page .service__image:hover img {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
 }
 .featured-property .page .service__details {
   display: flex;
@@ -1114,7 +1127,7 @@ p {
   font-weight: 700;
   font-size: 1rem;
   line-height: 21px;
-  color: #c4c4c4;
+  color: #e8630a;
 }
 .featured-property .page .service__details .numbers {
   font-style: normal;
@@ -1603,6 +1616,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  transition: background-color 0.3s ease;
 }
 @media screen and (max-width: 900px) {
   .btn {
@@ -1610,13 +1624,20 @@ p {
   }
 }
 .btn.primary {
-  background-color: #c4c4c4;
+  background-color: #035397;
   color: #ffffff !important;
 }
+.btn.primary:hover {
+  background-color: #001e6c;
+}
 .btn.secondary {
-  color: #c4c4c4;
-  border: 1px solid #c4c4c4;
+  color: #035397;
+  border: 1px solid #035397;
   box-sizing: border-box;
+}
+.btn.secondary:hover {
+  background-color: #035397;
+  color: #ffffff;
 }
 
 .patern {
@@ -1626,8 +1647,12 @@ p {
   gap: 8px;
 }
 .patern__dot {
-  background-color: #f2f2f2;
+  background-color: #fcd900;
   border-radius: 50%;
+  opacity: 0.4;
+}
+.patern__dot:hover {
+  background-color: #035397;
 }
 
 .logo {
@@ -1640,6 +1665,7 @@ p {
 }
 .logo__icon {
   width: 24px;
+  transition: all 0.3s ease;
 }
 .logo__text {
   font-style: normal;
@@ -1647,6 +1673,13 @@ p {
   font-size: 1rem;
   line-height: 21px;
   color: #c4c4c4;
+  transition: all 0.3s ease;
+}
+.logo:hover .logo__icon {
+  transform: rotate(90deg);
+}
+.logo:hover .logo__text {
+  color: #035397;
 }
 
 body {
