@@ -155,10 +155,17 @@
         left: -16px;
         height: 100%;
         width: 100%;
-        border-left: 1px solid #c4c4c4;
-        border-bottom: 1px solid #c4c4c4;
-        border-top: 1px solid #c4c4c4;
+        border-left: 1px solid $yellow;
+        border-bottom: 1px solid $yellow;
+        border-top: 1px solid $yellow;
         border-radius: 320px 320px 0px 0px;
+        transition: left 0.3s ease;
+      }
+
+      &:hover {
+        &::after {
+          left: 0;
+        }
       }
     }
 
@@ -197,10 +204,17 @@
         right: -16px;
         height: 100%;
         width: 100%;
-        border-right: 1px solid #c4c4c4;
-        border-bottom: 1px solid #c4c4c4;
-        border-top: 1px solid #c4c4c4;
+        border-right: 1px solid $yellow;
+        border-bottom: 1px solid $yellow;
+        border-top: 1px solid $yellow;
         border-radius: 320px 320px 0px 0px;
+        transition: right 0.3s ease;
+      }
+
+      &:hover {
+        &::after {
+          right: 0;
+        }
       }
     }
   }
